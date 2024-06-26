@@ -24,6 +24,7 @@ import Carousellaunchpad from '../Components/Carousel/LaunchpadCarousel';
 import launchpadData from '../Components/Json/LaunchpadData.json';
 import CarouselProject from '../Components/Carousel/ProjectCarousel';
 import projectData from '../Components/Json/ProjectData.json';
+import Footer from '../Components/Footer';
 
 const imageMap = {
   image1: require('../assets/Upcomingevents.png'),
@@ -585,6 +586,9 @@ const Home = () => {
             </div>
         </div>
       </div>
+
+      <Footer />
+      
 
     </div>
   )
