@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='flex items-center justify-center'>
             <img className='h-24 w-80 mt-10' src={logo1} alt="Raja Decors"/>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-4 px-0 mx-0 md:mx-5 mt-10'>
+        <div className='grid grid-cols-1 md:grid-cols-4 px-0 mx-5 md:mx-5 mt-10'>
             <div className='list-none flex flex-col gap-2 justify py-4 md:mx-0 text-2xl'>
                 <Link to='/' className='hover:text-[#CE4D2E]'>
                     <p>Home</p>
@@ -36,7 +36,7 @@ const Footer = () => {
                     <p>Contact us</p>
                 </Link>
             </div>
-            <div className='text-2xl'>
+            <div className='text-2xl md:py-0 py-10'>
                 <div className='my-2 hover:cursor-pointer hover:text-[#CE4D2E]'>
                     <h2>Upcoming Events</h2>
                 </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='text-2xl'>
+            <div className='text-2xl md:py-0 py-10'>
                 <div className='my-2 hover:cursor-pointer hover:text-[#CE4D2E]'>
                     <h2>Startup Blog</h2>
                 </div>
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
 
             <div className=''>
-                <h1 className='text-[#CE4D2E] font-bold md:text-3xl'>Get in Touch</h1>
+                <h1 className='text-[#CE4D2E] font-bold text-3xl'>Get in Touch</h1>
                 <div className=''>
                 <div className='text-xl font-semibold my-5'>
                     <span className='font-bold text-2xl'>Email: </span>contact@ourplatform.com
@@ -120,18 +120,18 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='flex justify-center items-center gap-8 mx-4 md:mx-0'>
+        <div className='flex justify-center items-center gap-4 md:gap-8 mx-4 md:mx-0'>
             <a href='' target='_blank'>
-                <img className='h-16 my-8 hover:scale-110 transition duration-300'  src={facebook} alt='facebook'/>
+                <img className='md:h-14 h-12 my-8 hover:scale-110 transition duration-300'  src={facebook} alt='facebook'/>
             </a>
             <a href='' target='_blank' className=''>
-                <img className='h-16 my-8 hover:scale-110 transition duration-300'  src={twitter} alt='facebook'/>
+                <img className='md:h-14 h-12 my-8 hover:scale-110 transition duration-300'  src={twitter} alt='facebook'/>
             </a>
             <a href='' target='_blank' className=''>
-                <img className='h-16 my-8 hover:scale-110 transition duration-300'  src={linkedin} alt='facebook'/>
+                <img className='md:h-14 h-12 my-8 hover:scale-110 transition duration-300'  src={linkedin} alt='facebook'/>
             </a>
             <a href=''>
-                <img className='h-16 my-8 hover:scale-110 transition duration-300'  src={youtube} alt='youtube'/>
+                <img className='md:h-14 h-12 my-8 hover:scale-110 transition duration-300'  src={youtube} alt='youtube'/>
             </a>
         </div>
         <div className='font-bold capitalize'>

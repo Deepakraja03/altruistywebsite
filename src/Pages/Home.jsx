@@ -214,15 +214,17 @@ const Home = () => {
         <div className=''>
             <CarouselHome />
         </div>
-        <div className='md:mx-5 md:mt-20 bg-white py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
-        <Carousel
+        <div className='md:mx-5 mx-2 md:mt-20 mt-10 bg-white py-6 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className=''>
+            <Carousel
                 slides={slides}
                 styles="object-cover w-full h-full"
             />
+          </div>
         </div>
-        <div className='md:mx-5 md:mt-20 bg-white pt-2 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+        <div className='md:mx-5 mx-2 md:mt-20 mt-10 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
           <div className='flex justify-between items-center'>
-            <div className='text-[#28316B] text-4xl font-bold'>
+            <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
               Upcoming Events
             </div>
             <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -241,13 +243,13 @@ const Home = () => {
 
 
         <div className='py-10'>
-          <div className='text-[#CE4D2E] px-5 text-5xl font-bold'>
+          <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold'>
             Key Features
           </div>
 
-          <div className='md:mx-5 md:mt-10 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 mt-10 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Jobs and Internships
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -263,9 +265,9 @@ const Home = () => {
         </div>
 
         <div className='py-10'>
-          <div className='md:mx-5 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Events and Competitions
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -281,9 +283,9 @@ const Home = () => {
         </div>
 
         <div className='py-10'>
-          <div className='md:mx-5 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Volunteer and Sponsorship Opportunities
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -300,16 +302,16 @@ const Home = () => {
 
 
         <div className='py-10'>
-          <div className='md:mx-5 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Community Pages
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
                 View More
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex md:flex-row flex-col justify-center">
             {communityslides.map((data, index) => (
               <CommunityCard
                 key={index}
@@ -324,9 +326,9 @@ const Home = () => {
         </div>
 
         <div className='py-10'>
-          <div className='md:mx-5 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Investor and Startup Connect
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -344,13 +346,13 @@ const Home = () => {
 
 
         <div className='py-10'>
-          <div className='text-[#CE4D2E] px-5 text-5xl font-bold'>
+          <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold'>
             Latest Opportunities
           </div>
 
-          <div className='md:mx-5 md:mt-10 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 mt-10 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Featured Jobs and Internships
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -366,9 +368,9 @@ const Home = () => {
         </div>
 
         <div className='py-10'>
-          <div className='md:mx-5 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Upcoming Events and Competitions
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -385,13 +387,13 @@ const Home = () => {
 
 
         <div className='py-10'>
-          <div className='text-[#CE4D2E] px-5 text-5xl font-bold'>
+          <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold'>
             Funding Schemes and Opportunities Showcase
           </div>
 
-          <div className='md:mx-5 md:mt-10 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 mt-10 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Funding Schemes and Opportunities
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -407,9 +409,9 @@ const Home = () => {
         </div>
 
         <div className='py-10'>
-          <div className='md:mx-5 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
               <div className='flex justify-between items-center my-5'>
-                <div className='text-[#28316B] text-4xl font-bold'>
+                <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                   Mentor and Incubation Service
                 </div>
                 <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -425,9 +427,9 @@ const Home = () => {
           </div>
 
           <div className='py-10'>
-          <div className='md:mx-5 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
               <div className='flex justify-between items-center my-5'>
-                <div className='text-[#28316B] text-4xl font-bold'>
+                <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                   Startup Blog
                 </div>
                 <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -444,13 +446,13 @@ const Home = () => {
 
           
         <div className='py-10'>
-          <div className='text-[#CE4D2E] px-5 text-5xl font-bold'>
+          <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold'>
             Collaborate with Us for Free Domain Training Program for Schools and Colleges
           </div>
 
-          <div className='md:mx-5 md:mt-10 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 mt-10 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Collaborate with Us
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -466,13 +468,13 @@ const Home = () => {
         </div>
         
         <div className='py-10'>
-          <div className='text-[#CE4D2E] px-5 text-5xl font-bold'>
+          <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold'>
             Launchpad
           </div>
 
-          <div className='md:mx-5 md:mt-10 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 mt-10 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Launchpad
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -488,13 +490,13 @@ const Home = () => {
         </div>
 
         <div className='py-10'>
-          <div className='text-[#CE4D2E] px-5 text-5xl font-bold'>
+          <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold'>
             Project Showcase
           </div>
 
-          <div className='md:mx-5 md:mt-10 bg-white pt-0.5 pb-8 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className='md:mx-5 mx-2 mt-10 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
-              <div className='text-[#28316B] text-4xl font-bold'>
+              <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
                 Project Showcase
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
@@ -511,14 +513,14 @@ const Home = () => {
 
 
         <div className='py-10'>
-          <div className='text-[#CE4D2E] px-5 text-5xl font-bold text-center'>
+          <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold text-center'>
             Contact Us
           </div>
 
-      <div className='grid grid-cols-2 gap-2 mt-8'>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-2 mt-8'>
           <div>
             <h1 className='text-[#28316B] font-bold py-4 text-3xl text-center md:text-4xl'>Get in Touch</h1>
-            <div className='mx-20 mt-10'>
+            <div className='md:mx-20 mx-10 md:mt-10 mt-5'>
               <div className='text-xl font-semibold my-5'>
                 <span className='font-bold text-2xl'>Email: </span>contact@ourplatform.com
               </div>
@@ -535,7 +537,7 @@ const Home = () => {
           
 
           <div>
-              <form ref={form} className='mx-0 md:mx-5 flex flex-col justify-center items-center'>
+              <form ref={form} className='mx-5 flex flex-col justify-center items-center'>
                 <h1 className='text-[#28316B] font-bold py-4 text-3xl text-center md:text-4xl'>Email us</h1>
                 <input
                   name='from_name'

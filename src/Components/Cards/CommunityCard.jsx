@@ -2,7 +2,7 @@ import React from 'react';
 
 const CommunityCard = ({ image, title, description, register }) => {
   return (
-    <div className="relative rounded-xl mx-14 md:gap-3 md:h-96 md:w-full shadow-md overflow-hidden">
+    <div className="relative rounded-xl md:mx-14 my-2 md:my-0 md:gap-3 md:h-96 md:w-full shadow-md overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${image})` }}
