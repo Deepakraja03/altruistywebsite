@@ -1,0 +1,27 @@
+[
+    {
+      "imageKey": "image1",
+      "title": "For Schools and Colleges",
+      "description": "Collaborate with us to bring high-quality domain training programs to your institution.",
+      "register": "Read More"
+    },
+    {
+      "imageKey": "image2",
+      "title": "For Trainers",
+      "description": "Share your expertise and contribute to the educational growth of students.",
+      "register": "Read More"
+    },
+    {
+      "imageKey": "image3",
+      "title": "Corporate Partners",
+      "description": "Support our training programs and help shape the future workforce.",
+      "register": "Read More"
+    },
+    {
+        "imageKey": "image4",
+        "title": "For Schools and Colleges",
+        "description": "Collaborate with us to bring high-quality domain training programs to your institution.",
+        "register": "Read More"
+      }
+  ]
+  

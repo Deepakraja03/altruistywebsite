@@ -1,0 +1,27 @@
+[
+    {
+      "imageKey": "image1",
+      "title": "Idea Validation",
+      "description": "Validate your startup ideas with our expert support and resources.",
+      "register": "Start Now"
+    },
+    {
+      "imageKey": "image2",
+      "title": "Product Development",
+      "description": "Get assistance with product development to bring your ideas to market.",
+      "register": "Explore"
+    },
+    {
+      "imageKey": "image3",
+      "title": "Market Entry Strategies",
+      "description": "Develop effective strategies for entering and thriving in the market.",
+      "register": "Explore"
+    },
+    {
+        "imageKey": "image4",
+        "title": "Idea Validation",
+        "description": "Validate your startup ideas with our expert support and resources.",
+        "register": "Start Now"
+      }
+  ]
+  

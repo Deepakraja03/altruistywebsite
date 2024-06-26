@@ -1,0 +1,27 @@
+[
+    {
+      "imageKey": "image1",
+      "title": "Featured Projects",
+      "description": "Showcase your most innovative projects and get noticed by the right audience.",
+      "register": "Read More"
+    },
+    {
+      "imageKey": "image2",
+      "title": "Innovation Gallery",
+      "description": "Browse through our gallery of cutting-edge projects from talented innovators.",
+      "register": "Read More"
+    },
+    {
+      "imageKey": "image3",
+      "title": "Collaborate and Connect",
+      "description": "Find collaborators and partners to take your project to the next level.",
+      "register": "Read More"
+    },
+    {
+        "imageKey": "image4",
+        "title": "Featured Projects",
+        "description": "Showcase your most innovative projects and get noticed by the right audience.",
+        "register": "Read More"
+      }
+  ]
+  

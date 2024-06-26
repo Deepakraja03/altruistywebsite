@@ -1,0 +1,27 @@
+[
+    {
+      "imageKey": "image1",
+      "title": "Latest Articles",
+      "description": "Read our latest blog posts on startup strategies, innovation, and market trends.",
+      "register": "Read More"
+    },
+    {
+      "imageKey": "image2",
+      "title": "Success Stories",
+      "description": "Get inspired by success stories from startups that made it big.",
+      "register": "Read More"
+    },
+    {
+      "imageKey": "image3",
+      "title": "Industry Insights",
+      "description": "Gain valuable insights and stay ahead of the curve with our industry analysis.",
+      "register": "Read More"
+    },
+    {
+        "imageKey": "image4",
+        "title": "Latest Articles",
+        "description": "Read our latest blog posts on startup strategies, innovation, and market trends.",
+        "register": "Read More"
+      }
+  ]
+  

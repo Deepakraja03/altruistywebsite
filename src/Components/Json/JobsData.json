@@ -1,0 +1,38 @@
+[
+    {
+        "imageKey": "image1",
+        "title": "Software Testing Intern at Zoho",
+        "location": "Bangalore",
+        "salary": "₹15,000/month",
+        "type": "Part-time",
+        "description": "Join Zoho's team as a Software Testing Intern and gain hands-on experience in testing software products.",
+        "register": "Apply Now"
+    },
+    {
+        "imageKey": "image2",
+        "title": "UI/UX Designer Intern",
+        "location": "Hyderabad",
+        "salary": "$2000/month",
+        "type": "Part-time",
+        "description": "We are looking for a creative UI/UX Designer Intern to join our team. Work on real projects and enhance your design skills.",
+        "register": "Apply Now"
+    },
+    {
+        "imageKey": "image3",
+        "title": "Software Testing Intern at Zoho",
+        "location": "Bangalore",
+        "salary": "₹15,000/month",
+        "type": "Part-time",
+        "description": "Join Zoho's team as a Software Testing Intern and gain hands-on experience in testing software products.",
+        "register": "Apply Now"
+    },
+    {
+        "imageKey": "image4",
+        "title": "UI/UX Designer Intern",
+        "location": "Hyderabad",
+        "salary": "$2000/month",
+        "type": "Part-time",
+        "description": "We are looking for a creative UI/UX Designer Intern to join our team. Work on real projects and enhance your design skills.",
+        "register": "Apply Now"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "imageKey": "image1",
+        "title": "Tech Enthusiasts Community",
+        "description": "Connect with fellow tech enthusiasts, share your innovative projects, and collaborate on new ideas. Join our vibrant community to stay updated with the latest trends, participate in discussions, and enhance your skills.",
+        "register": "Join Now"
+    },
+    {
+        "imageKey": "image2",
+        "title": "Startup Founders Group",
+        "description": "Network with startup founders, share experiences, and seek advice from peers and mentors. Join this dynamic group to access valuable resources, collaborate on projects, and gain insights to grow your startup.",
+        "register": "Join Now"
+    }
+]

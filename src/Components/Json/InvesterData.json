@@ -1,0 +1,35 @@
+[
+    {
+      "imageKey": "image1",
+      "title": "Startup Pitch Event",
+      "date": "June 5, 2024",
+      "venue": "Online",
+      "description": "Present your startup ideas to potential investors and receive valuable feedback.",
+      "register": "Register Now"
+    },
+    {
+      "imageKey": "image2",
+      "title": "Investor Networking Session",
+      "date": "August 15, 2024",
+      "venue": "Mumbai",
+      "description": "Meet and connect with investors looking to support innovative startups.",
+      "register": "Register Now"
+    },
+    {
+        "imageKey": "image3",
+        "title": "Startup Pitch Event",
+        "date": "June 5, 2024",
+        "venue": "Online",
+        "description": "Present your startup ideas to potential investors and receive valuable feedback.",
+        "register": "Register Now"
+      },
+      {
+        "imageKey": "image4",
+        "title": "Investor Networking Session",
+        "date": "August 15, 2024",
+        "venue": "Mumbai",
+        "description": "Meet and connect with investors looking to support innovative startups.",
+        "register": "Register Now"
+      }
+  ]
+  

@@ -1,0 +1,27 @@
+[
+    {
+      "imageKey": "image1",
+      "title": "Expert Mentorship",
+      "description": "Pair up with industry experts who can provide valuable insights and advice.",
+      "register": "Find a Mentor"
+    },
+    {
+      "imageKey": "image2",
+      "title": "Incubation Programs",
+      "description": "Join our incubation programs to access resources, networks, and support tailored to your startup’s needs.",
+      "register": "Apply Now"
+    },
+    {
+      "imageKey": "image3",
+      "title": "Expert Mentorship",
+      "description": "Pair up with industry experts who can provide valuable insights and advice.",
+      "register": "Find a Mentor"
+    },
+    {
+      "imageKey": "image4",
+      "title": "Incubation Programs",
+      "description": "Join our incubation programs to access resources, networks, and support tailored to your startup’s needs.",
+      "register": "Apply Now"
+    }
+  ]
+  

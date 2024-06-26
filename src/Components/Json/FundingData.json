@@ -1,0 +1,27 @@
+[
+    {
+      "imageKey": "image1",
+      "title": "Seed Funding for Startups",
+      "description": "Access seed funding to kickstart your innovative projects and ideas.",
+      "register": "Apply Now"
+    },
+    {
+      "imageKey": "image2",
+      "title": "Government Grants",
+      "description": "Discover government grants available for technology and innovation-based startups.",
+      "register": "Apply Now"
+    },
+    {
+      "imageKey": "image3",
+      "title": "Venture Capital Opportunities",
+      "description": "Connect with venture capitalists eager to invest in promising startups.",
+      "register": "Apply Now"
+    },
+    {
+        "imageKey": "image4",
+        "title": "Seed Funding for Startups",
+        "description": "Access seed funding to kickstart your innovative projects and ideas.",
+        "register": "Apply Now"
+      }
+  ]
+  
