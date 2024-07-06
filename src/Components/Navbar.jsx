@@ -33,7 +33,16 @@ const Navbar = () => {
             &#9776; {/* Hamburger icon */}
           </button>
         </div>
-        <nav className="hidden items-center text-lg md:flex md:items-center md:gap-8">
+        <div className='hidden md:flex md:gap-10'>
+          <div>
+            <input type="search" className='border-2 border-black rounded-lg px-2 p-2 w-96 h-10 text-lg' placeholder='Search' name="" id="" />
+          </div>
+          <Link to="/profile" className={getLinkClassName("/profile")}>
+              <img src={profile} alt='profile' className='h-10 w-10'/>
+          </Link>
+        </div>
+      </div>
+      <nav className="hidden items-center text-lg md:flex md:items-center md:gap-20 md:justify-center md:pb-2">
           <Link to="/" className={getLinkClassName("/")}>
             Home
           </Link>
@@ -55,11 +64,10 @@ const Navbar = () => {
           <Link to="/contact-us" className={getLinkClassName("/contact-us")}>
             Contact us
           </Link>
-          <Link to="/profile" className={getLinkClassName("/profile")}>
-            <img src={profile} alt='profile' className='h-10 w-10'/>
-          </Link>
         </nav>
-      </div>
+        <div className='md:hidden flex items-center justify-center pb-4'>
+            <input type="search" className='border-2 border-black rounded-lg p-2 w-80 h-10 text-sm' placeholder='Search' name="" id="" />
+        </div>
       <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
     </div>
   );

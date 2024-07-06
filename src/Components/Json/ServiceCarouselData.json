@@ -9,39 +9,15 @@
     },
     {
       "imageKey": "image3",
-      "title": "Events and Competitions"
-    },
-    {
-      "imageKey": "image4",
       "title": "Volunteer & Sponsorship Opportunities"
     },
     {
+        "imageKey": "image4",
+        "title": "Featured Jobs & Internships"
+      },
+      {
         "imageKey": "image5",
-        "title": "Featured Jobs and Internships"
-      },
-      {
-        "imageKey": "image6",
-        "title": "Upcoming Events and Competitions"
-      },
-      {
-        "imageKey": "image7",
-        "title": "Funding Schemes and Opportunities"
-      },
-      {
-        "imageKey": "image8",
         "title": "Mentor and Incubation Service"
-      },
-      {
-        "imageKey": "image9",
-        "title": "Startup Blog"
-      },
-      {
-        "imageKey": "image10",
-        "title": "Our Impact"
-      },
-      {
-        "imageKey": "image11",
-        "title": "Success Stories"
       }
   ]
   

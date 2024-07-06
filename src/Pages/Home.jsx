@@ -25,19 +25,14 @@ import launchpadData from '../Components/Json/LaunchpadData.json';
 import CarouselProject from '../Components/Carousel/ProjectCarousel';
 import projectData from '../Components/Json/ProjectData.json';
 import Footer from '../Components/Footer';
+import { Link } from 'react-router-dom';
 
 const imageMap = {
   image1: require('../assets/Upcomingevents.png'),
   image2: require('../assets/Jobsandinternships.png'),
-  image3: require('../assets/Eventsandcompetitions.png'),
-  image4: require('../assets/Volunteer.png'),
-  image5: require('../assets/Featuredjobs.png'),
-  image6: require('../assets/Upcomingeandcompetitions.png'),
-  image7: require('../assets/Fundingschemes.png'),
-  image8: require('../assets/Mentor.png'),
-  image9: require('../assets/Blog.png'),
-  image10: require('../assets/Impact.png'),
-  image11: require('../assets/Successstories.png')
+  image3: require('../assets/Volunteer.png'),
+  image4: require('../assets/Featuredjobs.png'),
+  image5: require('../assets/Mentor.png')
 };
 const imageUpcoming = {
   image1: require('../assets/Events1.png'),
@@ -106,14 +101,14 @@ const Home = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const validateForm = () => {
-    const newErrors = {};
-    if (!formData.from_name) newErrors.from_name = 'Name is required';
-    if (!formData.phone) newErrors.phone = 'Phone is required';
-    if (!formData.emailid) newErrors.emailid = 'Email is required';
-    if (!formData.message) newErrors.message = 'Message is required';
-    return newErrors;
-  };
+  // const validateForm = () => {
+  //   const newErrors = {};
+  //   if (!formData.from_name) newErrors.from_name = 'Name is required';
+  //   if (!formData.phone) newErrors.phone = 'Phone is required';
+  //   if (!formData.emailid) newErrors.emailid = 'Email is required';
+  //   if (!formData.message) newErrors.message = 'Message is required';
+  //   return newErrors;
+  // };
 
 
 
@@ -214,7 +209,15 @@ const Home = () => {
         <div className=''>
             <CarouselHome />
         </div>
-        <div className='md:mx-5 mx-2 md:mt-20 mt-10 bg-white py-6 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+        {/* <div className='md:mx-5 mx-2 md:mt-20 mt-10 bg-white py-6 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+          <div className=''>
+            <Carousel
+                slides={slides}
+                styles="object-cover w-full h-full"
+            />
+          </div>
+        </div> */}
+        <div className='md:mx-5 mx-0 py-6 md:py-10 px-3'>
           <div className=''>
             <Carousel
                 slides={slides}
@@ -222,7 +225,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className='md:mx-5 mx-2 md:mt-20 mt-10 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
+        <div className='md:mx-5 mx-2 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
           <div className='flex justify-between items-center'>
             <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
               Upcoming Events
@@ -231,10 +234,10 @@ const Home = () => {
               View More
             </div>
           </div>
-          <div className='my-5 ml-5'>
+          {/* <div className='my-5 ml-5'>
             <input className='border-2 border-black rounded-xl px-2 p-1 h-8 text-sm' type="search" placeholder='Search' name="" id="" />
-          </div>
-          <div>
+          </div> */}
+          <div className=' pt-4'>
             <CaroueslUpcoming slides={upslides}
                 styles="object-cover w-full h-full"
             />
@@ -253,7 +256,9 @@ const Home = () => {
                 Jobs and Internships
               </div>
               <div className='hover:cursor-pointer hover:scale-105 hover:transition hover:duration-400 font-semibold'>
-                View More
+                <Link to='https://altruisty-intern.vercel.app'>
+                  View More
+                </Link>
               </div>
             </div>
             <div>
@@ -264,7 +269,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='py-10'>
+        {/* <div className='py-10'>
           <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
               <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
@@ -280,7 +285,7 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='py-10'>
           <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
@@ -367,7 +372,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='py-10'>
+        {/* <div className='py-10'>
           <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
             <div className='flex justify-between items-center my-5'>
               <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
@@ -383,10 +388,10 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
 
-        <div className='py-10'>
+        {/* <div className='py-10'>
           <div className='text-[#CE4D2E] px-5 md:text-5xl text-3xl font-bold'>
             Funding Schemes and Opportunities Showcase
           </div>
@@ -406,7 +411,7 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='py-10'>
           <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
@@ -426,7 +431,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='py-10'>
+          {/* <div className='py-10'>
           <div className='md:mx-5 mx-2 md:pt-0.5 pt-0.5 bg-white py-8 md:py-10 px-3 rounded-3xl shadow-slate-600 shadow-xl'>
               <div className='flex justify-between items-center my-5'>
                 <div className='text-[#28316B] md:text-4xl text-2xl font-bold'>
@@ -442,7 +447,7 @@ const Home = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           
         <div className='py-10'>

@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const Carousel = ({ slides }) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -27,15 +27,15 @@ const Carousel = ({ slides }) => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1
         }
       }
@@ -54,25 +54,25 @@ const Carousel = ({ slides }) => {
 };
 
 const SampleNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`${className} z-10`}
-        style={{ ...style, display: "block", right: "10px", top: "calc(50% - 20px)" }}
-        onClick={onClick}
-      />
-    );
-  };
-  
-  const SamplePrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`${className} z-10`}
-        style={{ ...style, display: "block", left: "10px", top: "calc(50% - 20px)" }}
-        onClick={onClick}
-      />
-    );
-  };
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} z-10`}
+      style={{ ...style, display: "block", right: "10px", top: "calc(50% - 20px)", backgroundColor: "black", borderRadius: "100%",  }}
+      onClick={onClick}
+    />
+  );
+};
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} z-10 text-black`}
+      style={{ ...style, display: "block", left: "10px", top: "calc(50% - 20px)", backgroundColor: "black", borderRadius: "100%"}}
+      onClick={onClick}
+    />
+  );
+};
 
 export default Carousel;
