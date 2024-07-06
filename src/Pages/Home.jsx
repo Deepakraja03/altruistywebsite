@@ -112,10 +112,6 @@ const Home = () => {
 
 
 
-
-
-
-
   useEffect(() => {
     const mappedSlides = carouselData.map((slide) => ({
       ...slide,

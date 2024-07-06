@@ -1,9 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 import Moon from '../assets/logo-removebg-preview.png';
 import MobileMenu from './MobileMenu';
 import { Link, useLocation } from "react-router-dom";
 import profile from '../assets/ProfileLogo.png';
+import carouselData from '../Components/Json/ServiceCarouselData.json';
+
+const imageMap = {
+  image1: require('../assets/Upcomingevents.png'),
+  image2: require('../assets/Jobsandinternships.png'),
+  image3: require('../assets/Volunteer.png'),
+  image4: require('../assets/Featuredjobs.png'),
+  image5: require('../assets/Mentor.png')
+};
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,6 +27,21 @@ const Navbar = () => {
       ? "text-[#FD8901] font-semibold scale-125 transition duration-500 md:mx-0 cursor-pointer"
       : "hover:text-[#FD8901] font-semibold hover:scale-110 transition duration-500 md:mx-0 cursor-pointer";
   };
+
+  const [info, setInfo] = useState(carouselData);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
+
+  useEffect(() => {
+    // Filter slides based on the search term
+    const filteredSlides = carouselData.filter(slide =>
+      slide.title.toLowerCase().includes(searchTerm.toLowerCase())
+    ).map(slide => ({
+      ...slide,
+      image: imageMap[slide.imageKey]
+    }));
+    setInfo(filteredSlides);
+  }, [searchTerm]);
 
   return (
     <div>
@@ -35,7 +59,15 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex md:gap-10'>
           <div>
-            <input type="search" className='border-2 border-black rounded-lg px-2 p-2 w-96 h-10 text-lg' placeholder='Search' name="" id="" />
+            <input 
+              type="search" 
+              className='border-2 border-black rounded-lg px-2 p-2 w-96 h-10 text-lg' 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder='Search'
+              onFocus={() => setIsSearchFocused(true)}
+              onBlur={() => setIsSearchFocused(false)}
+            />
           </div>
           <Link to="/profile" className={getLinkClassName("/profile")}>
               <img src={profile} alt='profile' className='h-10 w-10'/>
@@ -66,9 +98,36 @@ const Navbar = () => {
           </Link>
         </nav>
         <div className='md:hidden flex items-center justify-center pb-4'>
-            <input type="search" className='border-2 border-black rounded-lg p-2 w-80 h-10 text-sm' placeholder='Search' name="" id="" />
+            <input 
+              type="search" 
+              className='border-2 border-black rounded-lg p-2 w-80 h-10 text-sm' 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder='Search'
+              onFocus={() => setIsSearchFocused(true)}
+              onBlur={() => setIsSearchFocused(false)}
+            />
         </div>
       <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
+
+      {/* Display the filtered search results only when the search bar is focused */}
+      {isSearchFocused && searchTerm && (
+        <div className="px-5 md:px-5 py-5">
+          <h2 className="text-2xl font-semibold mb-4">Search Results:</h2>
+          {info.length > 0 ? (
+            <ul>
+              {info.map((slide, index) => (
+                <li key={index} className="mb-2 flex items-center gap-4">
+                  <img src={slide.image} alt={slide.imageKey} className="h-10 w-10" />
+                  {slide.title}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No results found</p>
+          )}
+        </div>
+      )}
     </div>
   );
 };
