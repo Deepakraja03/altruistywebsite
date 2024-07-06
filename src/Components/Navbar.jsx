@@ -14,6 +14,16 @@ const imageMap = {
   image5: require('../assets/Mentor.png')
 };
 
+const debounce = (func, delay) => {
+  let timer;
+  return function(...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func(...args);
+    }, delay);
+  };
+};
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation(); // Get the current path
@@ -28,25 +38,41 @@ const Navbar = () => {
       : "hover:text-[#FD8901] font-semibold hover:scale-110 transition duration-500 md:mx-0 cursor-pointer";
   };
 
-  const [info, setInfo] = useState(carouselData);
+  const [info, setInfo] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSearch = debounce((term) => {
+    setIsLoading(true);
+    // Simulate an API call or any async operation
+    setTimeout(() => {
+      const filteredSlides = carouselData.filter(slide =>
+        slide.title.toLowerCase().includes(term.toLowerCase())
+      ).map(slide => ({
+        ...slide,
+        image: imageMap[slide.imageKey]
+      }));
+      setInfo(filteredSlides);
+      setIsLoading(false);
+    }, 500);
+  }, 300);
 
   useEffect(() => {
-    // Filter slides based on the search term
-    const filteredSlides = carouselData.filter(slide =>
-      slide.title.toLowerCase().includes(searchTerm.toLowerCase())
-    ).map(slide => ({
-      ...slide,
-      image: imageMap[slide.imageKey]
-    }));
-    setInfo(filteredSlides);
+    if (searchTerm) {
+      handleSearch(searchTerm);
+    } else {
+      setInfo([]); // Clear results if search term is empty
+    }
   }, [searchTerm]);
 
   return (
     <div>
       <div className="relative flex justify-between px-5 md:py-5 md:px-5">
-        <div className="flex items-center pl-0">
+        <div className="hidden md:flex items-center pl-0">
+          <img className="absolute" src={Moon} height={150} width={150} alt="moon" />
+        </div>
+        <div className="md:hidden flex items-center text-center pl-16">
           <img className="absolute" src={Moon} height={150} width={150} alt="moon" />
         </div>
         <div className="flex my-5 items-center md:hidden">
@@ -112,12 +138,14 @@ const Navbar = () => {
 
       {/* Display the filtered search results only when the search bar is focused */}
       {isSearchFocused && searchTerm && (
-        <div className="px-5 md:px-5 py-5">
+        <div className="px-5 md:px-5 py-5 transition-opacity duration-500 ease-in-out">
           <h2 className="text-2xl font-semibold mb-4">Search Results:</h2>
-          {info.length > 0 ? (
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : info.length > 0 ? (
             <ul>
               {info.map((slide, index) => (
-                <li key={index} className="mb-2 flex items-center gap-4">
+                <li key={index} className="mb-2 flex items-center gap-4 transition-transform duration-500 ease-in-out transform hover:scale-105">
                   <img src={slide.image} alt={slide.imageKey} className="h-10 w-10" />
                   {slide.title}
                 </li>
