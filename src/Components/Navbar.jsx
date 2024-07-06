@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center pl-0">
           <img className="absolute" src={Moon} height={150} width={150} alt="moon" />
         </div>
-        <div className="md:hidden flex items-center text-center pl-16">
+        <div className="md:hidden flex items-center text-center pl-20">
           <img className="absolute" src={Moon} height={150} width={150} alt="moon" />
         </div>
         <div className="flex my-5 items-center md:hidden">
